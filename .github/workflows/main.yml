@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: oryks code coverage action
         id: selftest
-        uses: twyle/github-action-template@v0.2.2
+        uses: twyle/github-action-template@v1.0.0
         with:
           myinput: lyle
 
