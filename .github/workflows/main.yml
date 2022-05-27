@@ -13,7 +13,7 @@ jobs:
 
       - name: oryks code coverage action
         id: selftest
-        uses: twyle/github-action-template@v0.1.0
+        uses: twyle/oryks-code-coverage@v0.1.0
         with:
           myinput: lyle
 
