@@ -8,9 +8,6 @@ jobs:
 
     steps:
 
-      - name: Check out code
-        uses: actions/checkout@v2
-
       - name: oryks code coverage action
         id: selftest
         uses: twyle/oryks-code-coverage@v0.1.0
