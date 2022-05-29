@@ -8,12 +8,16 @@ jobs:
 
     steps:
 
+      - name: Check out code
+        uses: actions/checkout@v2
+
       - name: oryks code coverage action
         id: selftest
-        uses: twyle/oryks-code-coverage@v0.1.0
+        uses: twyle/oryks-code-coverage@v0.2.0
         with:
-          myinput: lyle
+          codedirectory: src/
+          testdirectory: tests/
 
       - name: action output
         run: |
-          echo "${{ steps.selftest.outputs.myoutput }}"
+          echo "${{ steps.selftest.outputs.testcoverage }}"
