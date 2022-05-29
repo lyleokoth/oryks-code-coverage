@@ -1,6 +1,6 @@
 # oryks-code-coverage
 
-This action shows code coverage using pytest coverage. To read about how it was developed, check out [How To Create a GitHub Action that Shows Code Coverage using Pytest](https://medium.com/@lyle-okoth/creating-a-pytest-github-action-that-shows-code-coverage-b0d11655b748)
+This action shows code coverage using pytest coverage. To read about how it was developed, check out [How To Create a GitHub Action that Shows Code Coverage using Pytest](https://medium.com/@lyle-okoth/creating-a-pytest-github-action-that-shows-code-coverage-b0d11655b748).
 
 ## Inputs
 
