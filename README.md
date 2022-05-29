@@ -51,3 +51,9 @@ The Test coverage
   run: |
     echo "${{ steps.selftest.outputs.testcoverage }}
 ```
+
+[bandit-image]: https://img.shields.io/badge/security-bandit-yellow.svg
+[bandit-url]: https://github.com/PyCQA/bandit
+
+[isort-image]: https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336
+[isort-url]: https://pycqa.github.io/isort/
