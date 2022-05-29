@@ -1,14 +1,23 @@
 # action.yml
-name: "GitHub Action Template"
-description: "A template for creating GitHub Actions."
+name: "Pytest Coverage Example"
+description: "Use Pytest to show test coverage."
 author: "Lyle Okoth"
 inputs:
-  myinput:
-    description: "The users name."
-    default: "world"
+  codedirectory:
+    description: "The directory containing the source code."
+    default: "The project root i.e '.'"
+  testdirectory:
+    description: "The directory containing the tests."
+    default: "tests\\"
+  pycovconfigfile:
+    description: "The pycov configuration file"
+    default: ".coveragerc"
+  pytestconfigfile:
+    description: "The pytest configuration file."
+    default: "setup.cfg"
 outputs:
-  myoutput:
-    description: "A greeting with the users name i.e hello world"
+  testcoverage:
+    description: "The Test coverage."
 runs:
   using: "docker"
   image: "Dockerfile"

@@ -1,29 +1,41 @@
-# github-action-template
-A template for creating GitHub Actions.
+# oryks-code-coverage
+
+This action shows code coverage using pycov.
 
 ## Inputs
 
-## `myinput`
+## `codedirectory`
 
-**Required** The users name. Default `"world"`.
+**Required** The directory containing the source code. Default `"."`.
+
+## `testdirectory`
+
+**Required** The directory containing the tests. Default `"tests\"`.
+
+## `pycovconfigfile`
+
+**Optional** The pycov configuration file Default `".coveragerc"`.
+
+## `pytestconfigfile`
+
+**Optional** The pytest configuration file. Default `"setup.cfg"`.
 
 ## Outputs
 
-## `myoutput`
+## `testcoverage`
 
-A greeting with the users name i.e hello world
+The Test coverage
 
 ## Example usage
-
 ```
-
-- name: github action template
+- name: oryks code coverage action
   id: selftest
-  uses: lyleokoth/github-action-template@v0.2.2
+  uses: twyle/oryks-code-coverage@v1.0.0
   with:
-    myinput: Lyle
+    codedirectory: src/
+    testdirectory: tests/
 
 - name: action output
   run: |
-    echo "${{ steps.selftest.outputs.myoutput }}
+    echo "${{ steps.selftest.outputs.testcoverage }}
 ```
